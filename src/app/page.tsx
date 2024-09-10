@@ -11,6 +11,7 @@ interface Profile {
 }
 
 export default function Home() {
+  // store user profile
   const [profile, setProfile] = useState<Profile | undefined>(undefined);
 
   const initLiff = async () => {
