@@ -57,7 +57,7 @@ export default function Home() {
   }, []);
 
   return (
-    <div className="flex flex-column gap-3 justify-center items-center">
+    <div className="h-[100vh] flex flex-column gap-3 justify-center items-center">
       <div className="text-4xl">Line Liff Test</div>
 
       <div>{profile ? JSON.stringify(profile) : "Loading profile..."}</div>
