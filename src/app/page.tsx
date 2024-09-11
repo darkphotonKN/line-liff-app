@@ -11,6 +11,8 @@ interface Profile {
 }
 
 export default function Home() {
+  console.log("LIFF ID:", process.env.NEXT_PUBLIC_LIFF_ID);
+
   // store user profile
   const [profile, setProfile] = useState<Profile | undefined>(undefined);
 
@@ -55,7 +57,7 @@ export default function Home() {
   }, []);
 
   return (
-    <div className="flex justify-center items-center">
+    <div className="flex flex-column gap-3 justify-center items-center">
       <div className="text-4xl">Line Liff Test</div>
 
       <div>{profile ? JSON.stringify(profile) : "Loading profile..."}</div>
